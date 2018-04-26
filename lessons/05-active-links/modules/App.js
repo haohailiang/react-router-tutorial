@@ -1,5 +1,6 @@
-import React   from 'react'
-import NavLink from './NavLink'
+import React    from 'react'
+import { Link } from 'react-router'
+import NavLink  from './NavLink'
 
 export default React.createClass({
 	render() {
@@ -11,8 +12,8 @@ export default React.createClass({
 					<li><NavLink to="/about">About</NavLink></li>
 					<li><NavLink to="/repos">Repos</NavLink></li>
 					<li>直接的方式调用Active Styles</li>
-					<li><Link to="/about" activeStyle={{ color: 'red' }}>About</Link></li>
-					<li><Link to="/repos" activeStyle={{ color: 'red' }}>Repos</Link></li>
+					<li><Link to="/about" activeStyle={{ color: 'green' }}>About</Link></li>
+					<li><Link to="/repos" activeStyle={{ color: 'green' }}>Repos</Link></li>
 				</ul>
 				{this.props.children}
 			</div>
